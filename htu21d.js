@@ -6,7 +6,7 @@
  
 module.exports = function(RED) {
     // The (C++) library we are using to talk to the chip
-	var htu21d = require("htu21d");
+	var htu21d = require("htu21d-i2c");
 
     // Set the htu21d debug option from the environment variable
     // TODO: Something is catching exceptions before we get a chance to handle them & output any debug
